@@ -1,0 +1,270 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    background: linear-gradient(to bottom left, red, green); 
+}
+
+h1 {
+    text-align: center; 
+    padding: 10px;
+    margin: 10px auto;
+    max-width: 15%;
+    background-color: aqua; 
+    border: ridge #008800 10px;
+}
+
+h2 {
+    text-align: center;
+    margin-top: 20px;
+}
+
+p {
+    font-size: 27px;    
+}
+
+a {
+    text-decoration: none;
+}
+
+.section {
+    height: 200px;
+    margin: 10px 0;
+}
+
+.header-2 {
+    font-size: xx-larger;
+    color: #f0f;  
+    margin: 1.3rem 0;
+}
+
+.buttons {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.button{
+    padding: 10px;
+    border-radius: 10px;
+    font-size: large;
+    font-weight: 700;
+    border:solid #0000FF;
+    cursor: pointer;
+}
+
+#last-page {
+    background:linear-gradient(to right, #FF0000,#FFFF00, #00FF00);  
+    border-top-left-radius: 50px;  
+    border-bottom-left-radius: 50px;  
+    padding-left: 15px;
+}
+
+#next-color {
+    background: #00FF00;    
+}
+
+#next-page {
+    background:linear-gradient(to left, #FF0000,#FFFF00, #00FF00); 
+    border-top-right-radius: 50px;  
+    border-bottom-right-radius: 50px;    
+    padding-right: 15px;     
+}
+
+#last-page:hover,
+#next-color:hover,
+#next-page:hover {
+    opacity: 0.8;
+}
+
+/* color play 4 on */
+
+.container {
+    width: 100%;
+    padding: 10px;
+    margin: 0 auto;
+    background:linear-gradient(to right, #7777FF,#DDDDFF, #7777FF); 
+    display: flex;
+    flex-direction: column;   
+    justify-content: space-around;
+    align-items: stretch;
+}
+
+.flex-container {
+    height: 160px;
+    width: 100%;
+    margin: 10px;
+    display: flex;
+}
+
+.container-1 {
+    justify-content: center;
+    gap: 15px;
+}
+
+.container-2 {
+    justify-content: space-evenly;
+}
+
+.container-3 {
+    justify-content: space-around;
+}
+
+.container-4 {
+    justify-content: space-between;
+}
+
+.cont-1 {
+    order: 4;
+}
+
+.cont-2 {
+    order: 5;
+}
+
+.cont-3 {
+    order: 3;
+}
+
+.cont-4 {
+    order: 6;
+}
+
+.cont-5 {
+    order: 2;
+}
+
+.cont-6 {
+    order: 7;
+}
+
+.cont-7 {
+    order: 1;
+}
+
+.cont-8 {
+    order: 8;
+}
+
+.column {
+    flex-direction: column;
+}
+
+.flex-card {
+    height: 150px;
+    width: 150px;
+    background-color: #00FF00;
+    color: #0000FF;
+    border: double 10px #FF0000;
+    border-radius: 20px;
+}
+
+/* color play 5 */
+
+.flex-card-5 {
+    height: 150px;
+    width: 200px;
+    margin: 20px 0;
+    background-color: #00FF00;
+    border: double 10px #FF0000;
+    border-radius: 40%;
+    visibility: hidden;
+}
+
+.flex-card-5.visibility {
+    visibility: visible;
+}
+
+/* color play 6 */
+
+.flex-card-6 {
+    height: 150px;
+    width: 150px;
+    background-color: #00FF00;
+    color: #0000FF;
+    border: ridge 20px #FF0000;
+}
+
+.container-a {
+    width: 100%;
+    /* background:linear-gradient(to right, #7777FF,#DDDDFF, #7777FF);  */
+    display: flex;
+    flex-direction: column;   
+    justify-content: space-around;
+    align-items: stretch;
+}
+
+.container-b {
+    height: 800px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;  
+}
+
+.container-aa {
+    flex-direction: row-reverse;  
+}
+
+.container-ab1 {
+    height: 750px;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.container-ab2 {
+    height: 750px;
+    flex-direction: column-reverse;
+    align-items: flex-end;
+}
+
+/* color play 7 */
+
+.flex-card-7 {
+    height: 150px;
+    width: 150px;
+    background-color: #00FF00;
+    color: #0000FF;
+    border: double 10px #FF0000;
+    border-radius: 20px;
+}
+
+/* color play 8 */
+
+.flex-card-7.invisibility {
+    visibility: hidden;
+}
+
+.container-8a {
+    width: 100%;
+    /* background:linear-gradient(to right, #7777FF,#DDDDFF, #7777FF);  */
+    display: flex;
+    flex-direction: column;   
+    justify-content: space-around;
+    align-items: stretch;
+}
+
+.container-8b {
+    height: 1120px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  
+}
+
+.container-8ab1 {
+    height: 1100px;   
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.container-8ab2 {
+    height: 1100px;
+    flex-direction: column;
+    align-items: flex-end;
+}
