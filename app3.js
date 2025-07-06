@@ -1,4 +1,4 @@
-const secAll = document.querySelectorAll(".section");
+const secAll = document.querySelectorAll(".section-3");
 const btn = document.getElementById("next-color");
 
 let j = 0;

@@ -1,6 +1,6 @@
 const container = document.querySelector(".container-8a");
 const contAll = document.querySelectorAll(".flex-container");
-const cards = document.querySelectorAll(".flex-card-7");
+const cards = document.querySelectorAll(".flex-card-8");
 const h2All = document.querySelectorAll("h2");
 const btn = document.getElementById("next-color");
 

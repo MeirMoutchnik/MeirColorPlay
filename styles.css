@@ -9,21 +9,21 @@ html {
 }
 
 body {
-    background: linear-gradient(to bottom left, red, green); 
+    background: linear-gradient(to bottom, red, green); 
 }
 
 h1 {
     text-align: center; 
     padding: 10px;
     margin: 10px auto;
-    max-width: 15%;
+    max-width: fit-content;
     background-color: aqua; 
     border: ridge #008800 10px;
 }
 
 h2 {
     text-align: center;
-    margin-top: 20px;
+    margin-top: 10px;
 }
 
 p {
@@ -34,10 +34,35 @@ a {
     text-decoration: none;
 }
 
+.wrapper {
+    height: 100vh;
+    padding-top: 150px;
+}
+
+.container-0 {
+    height: 100%;
+}
+
 .section {
-    height: 200px;
+    height: calc(100%/5 - 10px);
     margin: 10px 0;
 }
+
+.section-3 {
+    height: calc(100%/7 - 10px);
+    margin: 10px 0;
+}
+
+.header-1 {
+    position: fixed;
+    width: 100%;
+    padding-bottom: 10px;
+}
+
+.header-1.scroll {
+    opacity: 0.8;
+}
+
 
 .header-2 {
     font-size: xx-larger;
@@ -55,7 +80,7 @@ a {
     border-radius: 10px;
     font-size: large;
     font-weight: 700;
-    border:solid #0000FF;
+    border:solid 3px #0000FF;
     cursor: pointer;
 }
 
@@ -87,6 +112,7 @@ a {
 
 .container {
     width: 100%;
+    height: 100%;
     padding: 10px;
     margin: 0 auto;
     background:linear-gradient(to right, #7777FF,#DDDDFF, #7777FF); 
@@ -97,9 +123,9 @@ a {
 }
 
 .flex-container {
-    height: 160px;
+    height: calc(100%/8);
     width: 100%;
-    margin: 10px;
+    margin: 5px;
     display: flex;
 }
 
@@ -157,8 +183,8 @@ a {
 }
 
 .flex-card {
-    height: 150px;
-    width: 150px;
+    max-width: 150px;
+    width: 15%;
     background-color: #00FF00;
     color: #0000FF;
     border: double 10px #FF0000;
@@ -168,9 +194,8 @@ a {
 /* color play 5 */
 
 .flex-card-5 {
-    height: 150px;
-    width: 200px;
-    margin: 20px 0;
+    max-width: 200px;
+    width: 15%;
     background-color: #00FF00;
     border: double 10px #FF0000;
     border-radius: 40%;
@@ -193,15 +218,11 @@ a {
 
 .container-a {
     width: 100%;
-    /* background:linear-gradient(to right, #7777FF,#DDDDFF, #7777FF);  */
-    display: flex;
-    flex-direction: column;   
-    justify-content: space-around;
-    align-items: stretch;
+    height: 100%;
 }
 
 .container-b {
-    height: 800px;
+    height: 70%;
     display: flex;
     justify-content: space-between;
     align-items: center;  
@@ -209,23 +230,30 @@ a {
 
 .container-aa {
     flex-direction: row-reverse;  
+    padding-right: 10px;
+    padding-left: 5px;
 }
 
 .container-ab1 {
-    height: 750px;
+    height: 100%;
     flex-direction: column;
     align-items: flex-start;
 }
 
 .container-ab2 {
-    height: 750px;
+    height: 100%;
     flex-direction: column-reverse;
     align-items: flex-end;
 }
 
+.container-ac {
+    padding-right: 10px;
+}
+
 /* color play 7 */
 
-.flex-card-7 {
+.flex-card-7,
+.flex-card-8 {
     height: 150px;
     width: 150px;
     background-color: #00FF00;
@@ -234,15 +262,19 @@ a {
     border-radius: 20px;
 }
 
+.container-7b {
+    height: 85%;
+}
+
 /* color play 8 */
 
-.flex-card-7.invisibility {
+.flex-card-8.invisibility {
     visibility: hidden;
 }
 
 .container-8a {
     width: 100%;
-    /* background:linear-gradient(to right, #7777FF,#DDDDFF, #7777FF);  */
+    height: 100%;
     display: flex;
     flex-direction: column;   
     justify-content: space-around;
@@ -253,18 +285,168 @@ a {
     height: 1120px;
     display: flex;
     justify-content: space-between;
-    align-items: center;
-  
+    align-items: center;  
 }
 
 .container-8ab1 {
-    height: 1100px;   
+    height: 100%;   
     flex-direction: column;
     align-items: flex-start;
 }
 
 .container-8ab2 {
-    height: 1100px;
+    height: 100%;
     flex-direction: column;
     align-items: flex-end;
+}
+
+
+@media(max-width: 1700px) {
+    
+    .container-8a {
+        height: 70%;
+    }
+
+    .flex-card-8 {
+        height: 100px;
+        width: 100px;
+    }
+}
+
+@media(max-width: 1400px) {    
+    .container-8a {
+        height: 60%;
+    }
+    
+    .container-7a {
+        height: 70%;
+    }
+    
+    .flex-card-7 {
+        height: 100px;
+        width: 100px;
+    }
+}
+
+@media(max-width: 992px) {    
+    .container-8a {
+        height: 40%;
+    }
+    
+    .container-7a {
+        height: 50%;
+    }
+    
+    .container-7b {
+        height: 80%;
+    }
+    
+    .flex-card-7 {
+        height: 80px;
+        width: 80px;
+    }
+     h2 {
+        font-size: 1rem;
+    }
+
+    p {
+        font-size: 0.8rem;
+    }
+}
+
+@media(max-height: 1200px) {
+    h2 {
+        font-size: 1rem;        
+        padding-top: 2px;
+    }
+    
+    p {
+        font-size:1rem;
+    }
+    
+    .flex-card-6 {
+        height: 90px;
+        width: 90px;
+    }
+    .flex-card-7,
+    .flex-card-8 {
+         height: 80px;
+         width: 80px;
+    }
+    
+    .container-7b {
+        height: 77%;
+    }
+}
+
+@media(max-height: 720px) {
+   .flex-card h2, 
+   .flex-card-6 h2,
+   .flex-card-7 h2 {
+        visibility: hidden;
+    }
+
+    .flex-card-8 h2 {
+        font-size: 0.7rem;
+        margin-top: 5px;
+    }
+
+    .button {
+        font-size: 0.8rem;
+    }
+    
+    p {
+        font-size: 0.7rem;
+    }
+    
+    .container-7b {
+        height: 77%;
+    }
+    
+    .flex-card {
+        width: 50px;
+        height: 30px;
+    }
+    
+    .flex-card-6,   
+    .flex-card-8 {
+        height: 60px;
+        width: 60px;
+    } 
+    
+    .flex-card-7 {
+        height: 50px;
+        width: 50px; 
+    }
+   
+}
+
+@media(max-width: 576px) {        
+    .button {
+        font-size: 0.8rem;
+    }
+
+    .container-7a {
+        height: 45%;
+    } 
+
+    .container-7b {
+        height: 77%;
+    }
+
+    .container-8a {
+        height: 30%;
+    } 
+    
+    .flex-card-7,
+    .flex-card-8 {
+        height: 50px;
+        width: 50px; 
+    }
+    
+    .flex-card-7 h2,
+    .flex-card-8 h2 {
+        margin-top: 2px;
+        font-size: 0.7rem;
+    }
 }
