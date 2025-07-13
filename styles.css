@@ -183,10 +183,12 @@ a {
 }
 
 .flex-card {
-    max-width: 150px;
-    width: 15%;
-    background-color: #00FF00;
     color: #0000FF;
+}
+
+.flex-card-4 {
+    max-width: 200px;
+    width: 15%;
     border: double 10px #FF0000;
     border-radius: 20px;
 }
@@ -196,7 +198,6 @@ a {
 .flex-card-5 {
     max-width: 200px;
     width: 15%;
-    background-color: #00FF00;
     border: double 10px #FF0000;
     border-radius: 40%;
     visibility: hidden;
@@ -211,7 +212,6 @@ a {
 .flex-card-6 {
     height: 150px;
     width: 150px;
-    background-color: #00FF00;
     color: #0000FF;
     border: ridge 20px #FF0000;
 }
@@ -222,6 +222,7 @@ a {
 }
 
 .container-b {
+    width: 100%;
     height: 70%;
     display: flex;
     justify-content: space-between;
@@ -230,8 +231,7 @@ a {
 
 .container-aa {
     flex-direction: row-reverse;  
-    padding-right: 10px;
-    padding-left: 5px;
+    padding: 5px 5px 0 5px;
 }
 
 .container-ab1 {
@@ -256,8 +256,6 @@ a {
 .flex-card-8 {
     height: 150px;
     width: 150px;
-    background-color: #00FF00;
-    color: #0000FF;
     border: double 10px #FF0000;
     border-radius: 20px;
 }
@@ -443,7 +441,6 @@ a {
         height: 50px;
         width: 50px; 
     }
-    
     .flex-card-7 h2,
     .flex-card-8 h2 {
         margin-top: 2px;
