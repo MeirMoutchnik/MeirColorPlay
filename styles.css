@@ -270,7 +270,8 @@ a {
     visibility: hidden;
 }
 
-.container-8a {
+.container-8a,
+.container-9a {
     width: 100%;
     height: 100%;
     display: flex;
@@ -279,20 +280,23 @@ a {
     align-items: stretch;
 }
 
-.container-8b {
+.container-8b,
+.container-9b {
     height: 1120px;
     display: flex;
     justify-content: space-between;
     align-items: center;  
 }
 
-.container-8ab1 {
+.container-8ab1,
+.container-9ab1 {
     height: 100%;   
     flex-direction: column;
     align-items: flex-start;
 }
 
-.container-8ab2 {
+.container-8ab2,
+.container-9ab2 {
     height: 100%;
     flex-direction: column;
     align-items: flex-end;
@@ -425,6 +429,96 @@ a {
     }
 }
 
+/* color play 10 */
+
+.grid-10a {
+    background:linear-gradient(to right, #AAAAFF,#DDDDFF, #AAAAFF, #DDDDFF, #AAAAFF); 
+}
+
+.grid-10b {
+  display: grid;
+  border: 15px double #828282; 
+  margin: 5px;
+}
+
+.grid-10ba .item {
+    animation: brightening-a 4s infinite;
+  }  
+
+.grid-10bb .item {
+    animation: brightening-b 4s infinite;
+}
+
+@keyframes brightening-a {
+    0% {
+        opacity: 0.1;
+    }
+
+    50% {
+        opacity: 1;
+    }    
+
+    100%{
+        opacity: 0.1;
+    }    
+}
+
+@keyframes brightening-b {
+    0% {
+        opacity: 1;
+    }
+    
+    50% {
+        opacity: 0.1;
+    }
+
+    100% {
+        opacity: 1;
+    }    
+}
+
+.grid-10ba {
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: 1fr repeat(2, 2fr) 1fr;
+}
+
+.item-a6,
+.item-a8 {
+  grid-column: 4;
+}
+
+.grid-10bb {
+  grid-template-columns: repeat(6, 1fr);
+  grid-template-rows: repeat(2, 1fr) repeat(2, 4fr) repeat(2, 1fr);
+}
+
+.item-b1 {
+  grid-column: span 2;
+  grid-row: span 2;
+}
+
+.item-b2,
+.item-b9 {
+  grid-column: 5 / span 2;
+  grid-row: span 2;
+}
+
+.item-b5,
+.item-b7 {
+  grid-column: 2;
+}
+
+.item-b6,
+.item-b8 {
+  grid-column: 5;
+}
+
+.item-b9,
+.item-b12 {
+  grid-column: span 2;
+  grid-row: span 2;
+} 
+
 @media(max-width: 1700px) {
     
     .container-8a {
@@ -476,7 +570,17 @@ a {
     p {
         font-size: 0.8rem;
     }
-}
+
+    .grid-10a {
+        display: block;
+        padding-top: 15px;
+        background:linear-gradient(to right, #AAAAFF,#DDDDFF, #AAAAFF); 
+    }
+
+    .grid-10b {
+        height: calc(100% / 2 - 10px);
+    }
+} 
 
 @media(max-height: 1200px) {
     h2 {

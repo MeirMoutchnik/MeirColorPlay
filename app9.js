@@ -18,8 +18,5 @@ const colorChange = () => {
 colorChange();
 
 const interval = setInterval(colorChange, 2000);
-// const clear = clearInterval(interval);
 const stopColorChange = () => clearInterval(interval);
 btn.addEventListener("click", stopColorChange);
-
-// setTimeout(clear, 10000);
