@@ -2,7 +2,7 @@ const itemsA = document.querySelectorAll(".grid-10ba .item");
 const itemsB = document.querySelectorAll(".grid-10bb .item");
 const btn = document.getElementById("next-color");
 
-let j = 30;
+let j = 0;
 let k = 0;
 
 const colorChange = () => {
